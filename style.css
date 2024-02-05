@@ -1,0 +1,274 @@
+/* Reset de estilos */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+   width: 100%;
+background-color: #F2F2F2;
+
+
+
+  height: calc(100vh - env(safe-area-inset-top));
+  /* Otra propiedad CSS que puede ayudar a mejorar la compatibilidad con diferentes navegadores */
+  padding-top: env(safe-area-inset-top);
+
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* ||||||||||||||| CABECERA PANTALLA |||||||||||||||||||||||||| */
+
+
+header {
+   
+   /* background-color:#F6F7F8; Color de fondo de la cabecera */
+   /* background-color:aquamarine; */
+  border:1px solid black;
+    height: 50vh; /* Altura del 40% de la ventana */
+    width: 100%; /* Ancho del 100% */
+    overflow-y: auto;
+   }
+
+
+#logo{display: flex;  align-items: center;   justify-content: center; display:none; }
+#logo img{ height:8vh; width: auto;}
+#logo h3{margin-left:1%; color:#D92929; }
+
+
+/* PARTE DiNAMICA DE LA CABECERA */
+
+#pantalla_descripcion_corta{ width:100%; height:5vh;}
+
+#pantalla_imagen_precio{
+
+  height:25vh;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+#pantalla_imagen_precio svg {  width: 30px;  height:30px;}
+
+#pantalla_imagen, #pantalla_precio{ width:50%; max-width:50%;   }
+
+ #pantalla_imagen{ display: flex;  align-items: center; justify-content: center; background-color:black; }
+
+#pantalla_imagen img {
+   max-width: 80%; /* Ajusta el tamaño máximo al 100% del contenedor */
+   max-height: 80%; /* Ajusta la altura máxima al 100% del contenedor */
+
+   }
+
+
+
+#pantalla_precio{
+ 
+  
+   display: flex;
+   flex-direction: column;
+  background-color:turquoise;
+  
+ 
+  
+  
+}
+
+
+
+
+#pantalla_descripcion_textarea{
+
+  width: 100%;
+  height:20vh;
+  
+}
+
+
+/* FIN PARTE DiNAMICA DE LA CABECERA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pantalla_demanda{
+  
+  width: 100%;
+  height: 100%;
+  display:flex;
+  }
+
+#pantalla_demanda img{
+
+  max-width:50%; /* La imagen se ajustará al ancho del contenedor */
+  max-height:100%; /* Mantiene la relación de aspecto original de la imagen */
+}
+
+
+
+/* ||||||||||||||||||||||| MENU OFERTA Y DEMANDA ||||||||||||||||||||||| */
+
+
+
+#contenedor_contenido{ display: flex;  justify-content: center; }
+
+
+
+
+
+#contenedor_iconos_oferta_demanda{
+
+  display:flex;
+  width: 98%; height:8vh;
+  position: fixed; 
+  top: 50vh;
+  max-height: 5vh;  
+
+}
+
+
+#icono_oferta,#icono_demanda{
+
+  height: 100%; width: 42%; display: flex; justify-content: center; align-items: center; color:white; font-size:1.8vh; font-weight: bold;
+  
+  border-radius:20px 10px 0 0; 
+}
+
+
+#icono_oferta{ background-color: #09734C;  } 
+
+#icono_demanda{ background-color: #BF4B4B;  } 
+
+
+
+#contenedor_icono_centro{ 
+
+  height: 100%; width:16%; display: flex; justify-content: center; align-items:center;
+
+ }
+
+
+
+
+
+ #icono_oferta:hover, #icono_demanda:hover{ 
+  
+  cursor:pointer; color:aquamarine; 
+  /* border: solid 5px black; border-bottom: none; */
+ 
+  box-shadow: 0 0 29px rgba(65, 9, 9, 0.5);
+}
+
+ #icono_alta:hover{ cursor:pointer;  fill:green; font-size:110%;}
+
+
+
+
+/* ||||||||||||||||||||||| LISTAS OFERTA Y DEMANDA ||||||||||||||||||||||| */
+
+
+
+
+
+#listas{
+  position:fixed;
+ 
+  width:98%;
+
+  overflow-y: scroll; 
+
+   font-size:1 rem;
+  padding:5px;
+
+   border-radius:0 0 19px 19px;
+
+  
+  background-color:#F4EED1; 
+
+  border:1px solid #D92929;
+  top:55vh;  
+  height: 30vh; 
+  max-height:30vh; 
+
+   
+}
+
+
+
+
+/*  Para que se vean bien los registros  en el espaciado*/
+ #listas p{ padding: 1.5vh 0; border-bottom: 1px dashed black; }
+
+
+
+ #listas p:hover{ background-color:aquamarine; cursor:pointer; }
+
+
+
+.contenedor_de_iconos_items{
+   background-color:#F2F2F2; border-radius: 15px 0 15px 0; border:solid 1px black; padding: 0 8px 0 5px; margin-right: 4px; 
+  
+}
+
+
+     
+        
+
+
+        
+       
+
+
+/* |||||||||||||||||||||||   PIE  ||||||||||||||||||||||| */
+
+.icono{fill:#F2F2F2;}
+
+.icono:hover,.usuario_titulo_icono:hover{ cursor: pointer; fill:aquamarine;    }
+
+
+footer {
+  position:fixed;
+
+  background-color:#09734C;
+  
+ bottom: 0px;
+    
+  height:6vh;
+  width:100%; /* Ancho del 100% */
+  border-radius:19px 19px 0 0;
+
+   display: flex;
+    justify-content: space-around; /* Espacio alrededor de los iconos */
+    align-items: center; /* Centra verticalmente los iconos */
+  
+}
+
+
+
+
