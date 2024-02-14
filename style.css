@@ -74,8 +74,6 @@ header {
 #pantalla_precio{
  
   
-  /* display: flex;
-   flex-direction: column; */
   background-color:turquoise;
    
     
@@ -85,10 +83,27 @@ header {
 
 height:50%;
 display: flex;
-justify-content:flex-start;
+justify-content:center;
 align-items: center; /* Alinea verticalmente */
 
+
+width: 100%;
+
 }
+
+#checkbox_subasta, #checkbox_envio{   transform: scale(1.5); margin:0 15px 20px 0; }
+
+
+#pantalla_contenedor_iconos{
+
+  height:50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center; /* Alinea verticalmente */
+
+}
+
 
 
 
