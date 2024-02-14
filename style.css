@@ -74,13 +74,20 @@ header {
 #pantalla_precio{
  
   
-   display: flex;
-   flex-direction: column;
+  /* display: flex;
+   flex-direction: column; */
   background-color:turquoise;
-  
- 
-  
-  
+   
+    
+}
+
+#pantalla_contenedor_precio{
+
+height:50%;
+display: flex;
+justify-content:flex-start;
+align-items: center; /* Alinea verticalmente */
+
 }
 
 
@@ -95,20 +102,6 @@ header {
 
 
 /* FIN PARTE DiNAMICA DE LA CABECERA */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
